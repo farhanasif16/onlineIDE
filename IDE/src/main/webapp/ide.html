@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ha-Far Online IDE</title>
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+	#editor {
+	height: 400px; 
+	}
+</style>
+</head>
+<body>
+
+	<div class="header"> Ha-Far Online IDE </div>
+	<div class="control-panel">   
+		Select language:
+		&nbsp; &nbsp;
+		<select id="languages" class="languages" onchange="changeLanguage()" name="language">
+			<option value="c"> C </option>
+			<option value="java"> Java </option>
+			<option value="cpp"> C++ </option>
+			<option value="php"> PHP </option>
+			<option value="python"> Python</option>
+			<option value="javaScript"> JavaScript</option>
+		</select>
+	</div>
+	<div class="editor" id="editor"></div>
+	<div class="button-container">
+		<button class="btn" onclick="executeCode()"> Run </button>
+	</div>
+	<div class="output"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/lib/ace.js"></script>
+	<script src="js/lib/theme-monokai.js"></script>
+	<script src="js/ide.js"></script>
+</body>
+</html>
