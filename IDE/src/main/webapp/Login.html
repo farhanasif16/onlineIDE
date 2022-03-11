@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+<title>Online IDE</title>
+<style>
+body{
+	background-color: rgb(150,130,130);
+}
+.leftdiv {
+	border-color: black;
+	float: left;
+	color: blue;
+	background-color:rgb(110,110,50);
+	height: 7in;
+	width: 60%;
+}
+.rightdiv {
+	float: right;
+	background-color:rgb(100,100,80);
+	color: black;
+	height: 7in;
+	width: 40%;
+}
+article{
+	margin-left: 20%;
+}
+article p{
+	margin-top: 15%;
+	color: black;
+}
+article h1 {
+	color: black;
+	margin-top: 20%;
+}
+.rightdiv form{
+	padding-left: 10%;
+}
+.rightdiv h1{
+	color: black;
+	margin-top: 20%;
+	font-size: 50px;
+}
+.sub:hover{
+	color: rgb(100,10,180);
+}
+nav ul{
+	list-style-type: none;
+}
+nav ul li{
+	float: left;
+	margin-right:2em;
+}
+nav ul li a{
+	
+}
+</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href=""><button>Home</button></a>
+				<li><a href=""><button>About</button></a>
+			</ul>
+		</nav>
+	</header>
+	<br>
+	<section>
+	<div class="leftdiv">
+		<article>
+			<h1 style="font-size: 50px">  Welcome to Online IDE!</h1>
+			<p style="font-size:20px">
+				Welcome to <strong>Online IDE</strong>. A platform where you can compile<br>
+				and run your code without taking care of libraries<br> 
+				and all the extra stuff,leave it all to us.Just write<br> 
+				the code and see the magic by pressing run.<br>
+			</p>
+		</article>
+	</div>
+	<div class="rightdiv">
+		<h1 style="padding-left: 10%;">Login:</h1>
+		<form action="authenticate" method="post">
+			<label for="id">EmailID:</label><br>
+			<br><input type="email" id="id" name="id" required><br>
+			<label for="pass">Password:</label><br>
+			<br><input  type="password" name="pass" maxlength="20" required ><br>
+			<br><input class="btn btn-primary" type="submit" value="Login"><br>
+		</form>
+		<br>
+		<a style="padding-left: 20%;color:rgb(200,180,200);"href="Register.html">Register Now</a>
+	</div>
+	</section>
+</body>
+</html>
